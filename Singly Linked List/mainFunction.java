@@ -1,5 +1,6 @@
 package LinkedList;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class mainFunction {
@@ -8,10 +9,11 @@ public class mainFunction {
 		
 		Scanner sc = new Scanner(System.in);
 		LinkedList linkedlist= new LinkedList();
+		try
+		{
 		while(true)
 		{
-			try
-			{
+			
 			System.out.println("   ");
 			System.out.println(" ");
 		System.out.println("~~~~~~~~~~~~~~Enter option~~~~~~~~~~~~~~~~~~~~~");
@@ -128,12 +130,16 @@ public class mainFunction {
 			
 		
 		}
-			}catch (Exception n) {
+			
+		}
+		}
+		catch (NullPointerException n) {
 
-				System.out.println("Position provided is invalid. Size of the linked list is "+linkedlist.getSize());
-			}
+			System.out.println("Position provided is invalid. Size of the linked list is "+linkedlist.getSize());
+		}
 		
-		
+		catch (InputMismatchException e) {
+				System.out.println("Words are not acceptable please enter numbers");
 		}
 		
 		}
