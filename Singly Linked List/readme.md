@@ -2,7 +2,8 @@ Complete Implementation of Singly Linked List. Edge cases Handled.
 
 
 UI 
-~~~~~~~~~~~~~~Enter option~~~~~~~~~~~~~~~~~~~~~
+
+Enter Option~~~~
 1.Insert at head
 2.Insert at tail
 3.Insert at position
@@ -15,4 +16,5 @@ UI
 10.Print LinkedList
 11.Print size
 12.Exit	
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
