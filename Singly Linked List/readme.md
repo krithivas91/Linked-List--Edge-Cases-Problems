@@ -11,7 +11,7 @@ Enter Option~~~~
 
 3.Insert at position
 
-4. Remove head element
+4. Remove Head element 
 
 5. Remove last element
 
