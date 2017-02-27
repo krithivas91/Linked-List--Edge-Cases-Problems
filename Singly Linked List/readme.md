@@ -11,9 +11,9 @@ Enter Option~~~~
 
 3.Insert at position
 
-4. Remove Head element 
+4.Remove Head Element 
 
-5. Remove last element
+5.Remove Last Element 
 
 6.Remove at Position
 
