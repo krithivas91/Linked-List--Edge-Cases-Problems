@@ -2,8 +2,8 @@ Singly Linked List Camplete Study. Edge cases Handled.
 
 
 UI 
-
-Enter Option~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter Option
 
 1.Insert at head
 
