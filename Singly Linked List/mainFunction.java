@@ -13,7 +13,6 @@ public class mainFunction {
 		{
 		while(true)
 		{
-			
 			System.out.println("   ");
 			System.out.println(" ");
 		System.out.println("~~~~~~~~~~~~~~Enter option~~~~~~~~~~~~~~~~~~~~~");
@@ -30,6 +29,11 @@ public class mainFunction {
 		System.out.println("11.Print size");
 		System.out.println("12.Exit	");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("Special Functions");
+		System.out.println("100.Remove Duplicates");
+		System.out.println("101.Search LinkedList");
+		System.out.println("102.Check for loops in linked list");
+		System.out.println("103.Make Circular list");
 		int option =sc.nextInt();
 		switch(option)
 		{
@@ -38,7 +42,7 @@ public class mainFunction {
 			System.out.println("Please enter the number to be inserted into the linked list:");
 			int val=sc.nextInt();
 			linkedlist.insertAthead(val);
-			System.out.println("~~list after insertion~~");
+			System.out.println("~~list after insertion~~");			
 			linkedlist.printLinkedList();
 			break;
 			
@@ -128,7 +132,30 @@ public class mainFunction {
 			System.exit(0);
 			break;
 			
+		case 100 :
+			System.out.println("    ");
+			System.out.println("Removing duplicates.......");
+			linkedlist.removeDup();
+			linkedlist.printLinkedList();
 		
+		case 101:
+			System.out.println("    ");
+			System.out.println("Enter the element you want to search:");
+			int search = sc.nextInt();
+			linkedlist.searchLink(search);
+			
+		case 102:
+			System.out.println("	");
+			System.out.println("Checking for Loops...");
+			linkedlist.circular();
+			break;
+			
+		case 103:
+			System.out.println(" ");
+			System.out.println("making the current list circular...");
+			linkedlist.makeCircular();
+			break;
+			
 		}
 			
 		}
@@ -141,7 +168,7 @@ public class mainFunction {
 		catch (InputMismatchException e) {
 				System.out.println("Words are not acceptable please enter numbers");
 		}
-		
+		sc.close();
 		}
 	}
 

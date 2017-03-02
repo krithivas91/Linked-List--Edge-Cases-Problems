@@ -1,4 +1,4 @@
-Complete Implementation of Singly Linked List. Edge cases Handled.
+Singly Linked List Camplete Study. Edge cases Handled.
 
 
 UI 
@@ -30,3 +30,9 @@ Enter Option~~~~
 12.Exit	
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Special Functions
+
+100.Remove Duplicates
+101.Search LinkedList
+102.Check for circular list
+103.Make Circular list

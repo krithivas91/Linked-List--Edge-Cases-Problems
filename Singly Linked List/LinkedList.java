@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.HashSet;
+
 public class LinkedList {
 
 		//Linked List structure
@@ -184,6 +186,109 @@ public class LinkedList {
 			
 			else
 			System.out.println(tail.getData());
+		}
+
+		public void removeDup() {
+
+			if(head!=null)
+			{
+			Node a = head;
+			
+			HashSet<Integer> Set = new HashSet<>();
+			
+			
+			while(a.getNext()!=null)
+			{
+				
+				if(Set.isEmpty())
+					Set.add(a.getData());
+				
+				if(!Set.contains(a.getNext().getData()))
+				{
+					Set.add(a.getNext().getData());
+					a=a.getNext();
+				}
+				else
+				{
+					a.setNext(a.getNext().getNext());
+					size--;
+				}
+			}
+			}
+			else
+				System.out.println("Linked list is empty");
+			
+			
+			
+		}
+		
+		
+		public void circular ()
+		{
+			Node check = new Node();
+			
+			check = head;
+			if(head==null)
+				{
+				System.out.println("Linked list not initialized"); 
+				return;
+				}
+			
+			HashSet<Node> set = new HashSet<>();
+			
+			while(!set.contains(check) && check!=null)
+			{
+				set.add(check);
+				check=check.getNext();
+				
+			}
+			
+			if (check ==null)
+				System.out.println("Not a circular list.. No loop detected");
+			else
+			{
+				System.out.println("Loop Detected");
+				System.out.println("at node "+check.toString()+" element "+check.getData());
+				
+			}
+		}
+
+		public void searchLink(int se) {
+			
+			if(head!=null)
+			{
+			Node search = head;
+			int pos=1;
+			HashSet<Integer> Set = new HashSet<>();
+			while(search!=null)
+			{
+				if(search.getData()==se)
+				{
+					Set.add(pos);
+					
+				}
+				search=search.getNext();
+				pos++;
+			}
+			if(Set.isEmpty())
+				System.out.println("Element not found in linkedlist");
+			else
+			{
+				System.out.printf("Element found at positions ");
+				System.out.printf(Set.toString());
+			}
+			}
+			else
+				System.out.println("Linked list is empty");
+			
+		}
+
+		public void makeCircular() {
+			
+			tail.setNext(head);
+			System.out.println("Done... ");
+			
+			
 		}
 
 		}
